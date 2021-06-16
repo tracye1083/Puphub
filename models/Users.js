@@ -24,27 +24,30 @@ User.init(
         firstName: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: false,
         },
         lastName: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: false,
+        },
+        phone: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+        address: {
+            type: DataTypes.STRING,
+            allowNull: false,
         },
         city: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: false,
         },
         state: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: false,
         },
         zipCode: {
             type: DataTypes.STRING,
             allowNull: false,
-            unique: false,
         },
         email: {
             type: DataTypes.STRING,

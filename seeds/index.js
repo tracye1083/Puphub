@@ -1,7 +1,7 @@
 const seedCompanies = require('./Company-seeds');
 const seedReviews = require('./Review-seeds');
 const seedUsers = require('./User-seeds');
-
+console.log('\n----- HERE -----\n');
 
 const sequelize = require('../config/connection');
 

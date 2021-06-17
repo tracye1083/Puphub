@@ -1,7 +1,7 @@
-
 console.log("comp-beg")
 const router = require('express').Router();
 const { Company } = require('../../models');
+
 // POST (Create) a new company
 router.post('/', async (req, res) => {
     // create a new category

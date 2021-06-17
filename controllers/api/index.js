@@ -1,4 +1,3 @@
-
 console.log("API-index-enter")
 const router = require('express').Router();
 const companyRoutes = require('./companyRoutes');
@@ -11,5 +10,4 @@ router.use('/reviews', reviewRoutes);
 router.use('/signup', signupRoutes);
 router.use('/users', userRoutes);
 
-console.log("API-index-EXIT")
 module.exports = router;

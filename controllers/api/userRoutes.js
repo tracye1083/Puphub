@@ -12,7 +12,6 @@ router.post('/signup', async (req, res) => {
             firstName: req.body.firstName,
             lastName: req.body.lastName,
             email: req.body.email,
-            //newUser.password = newUser.encryptPassword(req.body.password);
             password: req.body.password,
             //username: req.body.username,
             //email: req.body.email,

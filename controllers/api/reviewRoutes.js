@@ -2,6 +2,7 @@
 console.log("erv-beg")
 const router = require('express').Router();
 const { Review } = require('../../models');
+
 // GET all locations
 router.get('/', async (req, res) => {
     try {

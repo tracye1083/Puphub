@@ -37,6 +37,7 @@ router.get('/logout', async (req, res) => {
     try {
         if (req.session.loggedIn) {
             req.session.destroy();
+            //req.session.destroy();
             //return;
         }
         res.render('logout')

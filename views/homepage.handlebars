@@ -1,0 +1,110 @@
+
+    <div id="wrapper">
+    <div class="bg-success" id="sidebar-wrapper"  >
+        <div class="sidebar-brand">
+            <p class="text-white"></p>test456</p>
+        </div>
+
+        <ul class="sidebar-nav bg-danger">
+           <li class="bg-danger"><a href="/api/companies">Companies</a></li>           
+           <li class="bg-danger"><a href="/api/reviews">Reviews</a></li>
+           <li class="bg-danger"><a href="/api/users">Users</a></li>
+        </ul>
+    </div>
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar bg-success"><p>testaa</p></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars"></i></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right nav_bar">
+        {{#if loggedIN}}
+            <li><a href="/logout">Logout</a></li>
+        {{else}}
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+        {{/if}}
+        <li><a href="/">Home</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+        <div class="container-fluid main_body">
+           <h1>Hello, {{userFirstName}}</h1>
+           <p>What would you like to do today?</p>
+           
+            <div class="row">
+                <div class="col-md-4" id="colDesc">
+                    <div class="info-icon"><i class="fa fa-sign-in"></i></div>
+                    <h3 class="text-center">Add Company</h3>
+                    <p class="text-center">Add company profile so other users can give ratings and reviews.</p>
+
+                    <a href="/addCompany" class="btn btn-block btn-primary link_btn">Add</a>
+                </div>
+
+                <div class="col-md-4" id="colDesc">
+                    <div class="info-icon"><i class="fa fa-search"></i></div>
+                    <h3 class="text-center">Search</h3>
+                    <p class="text-center">We provide a limited list.<br>Search through our company list by zip code.</p>
+
+                    <a href="/company/search" class="btn btn-block btn-primary link_btn">Search</a>
+                </div>
+
+                <div class="col-md-4" id="colDesc">
+                    <div class="info-icon"><i class="fa fa-star"></i></div>
+                    <h3 class="text-center">Read Reviews</h3>
+                    <p class="text-center">Not sure what company you want to read about?  <BR>Here is a list of all companies.</p>
+
+                    <a href="/companies" class="btn btn-block btn-primary link_btn">Review</a>
+                </div>
+            </div>
+            {{#if userFirstName}}
+            <div class="row">
+                                <div class="col-md-4" id="colDesc">
+                    <div class="info-icon"><i class="fa fa-search"></i></div>
+                    <h3 class="text-center">Delete Review</h3>
+                    <p class="text-center">Only admins can delete a review.</p>
+
+                    <a href="/delReview" class="btn btn-block btn-primary link_btn">Search</a>
+                </div>
+
+                <div class="col-md-4" id="colDesc">
+                    <div class="info-icon"><i class="fa fa-star"></i></div>
+                    <h3 class="text-center">Delete Company</h3>
+                    <p class="text-center">Only admins can delete a company.</p>
+
+                    <a href="/delCompany" class="btn btn-block btn-primary link_btn">Review</a>
+                </div>
+            </div>
+            {{/if}}
+            
+        </div>
+    </div>
+
+</div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+

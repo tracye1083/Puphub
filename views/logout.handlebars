@@ -12,8 +12,7 @@
         </ul>
     </div>
 
-
-   
+    
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
@@ -25,7 +24,7 @@
     </div>
 
     
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       
       <ul class="nav navbar-nav navbar-right nav_bar">
         {{#if loggedIN}}
@@ -45,40 +44,20 @@
     </div>
    <br><br>
    
-   <div class="col-md-offset-4">
-         <a href="/auth/facebook" class="btn btn-block btn-social btn-facebook btn-lg">
-            <i class="fa fa-facebook"></i> Login with Facebook
-        </a>
-    </div><br>
+
 
 
    <div class="text-center reg_msg">
-        <h2 class="fancy"><span>LOGIN</span></h2>
+        <h2 class="fancy"><span>You have been successfully logged out.</span></h2>
    </div><br>
 
     <div class="row login">
         
  
 
-        <form method="POST" class="" id="loginForm" action="/api/users/login">
-
-            <div class="form-group input_group">
-                <input id="username" class="form-control" name="username" type="text" autocomplete="on" placeholder="USERNAME" style="margin-bottom:20px;">
-            </div>
-
-            <div class="form-group input_group">
-                <input id="password" class="form-control" name="password" type="password" placeholder="PASSWORD" style="margin-bottom:20px;">
-            </div>
-
-
-            <div class="form-group">
-                <input type="submit" id="submit" value="LOGIN" class="form-control btn btn-primary" name="submit" style="">
-            </div>
-
-          </form>
 
           <div>
-              <h4>Don't have an account? <a href="/signup">SignUp</a></h4>
+              <h4>Want to login? <a href="/login">Login</a></h4>
           </div>
 
 

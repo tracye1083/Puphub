@@ -31,23 +31,23 @@ User.init(
         },
         phone: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         address: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         city: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         state: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         zipCode: {
             type: DataTypes.STRING,
-            allowNull: false,
+            allowNull: true,
         },
         email: {
             type: DataTypes.STRING,

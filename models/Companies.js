@@ -45,7 +45,7 @@ Company.init(
         },
         rating: {
             type: DataTypes.INTEGER,
-            allowNull: false,
+            allowNull: true,
             defaultValue: 0,
             validate: {
                 min: 0,

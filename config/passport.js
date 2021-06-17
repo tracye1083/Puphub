@@ -2,45 +2,46 @@ const passport = require('passport');
 const bcrypt = require('bcrypt');
 const LocalStrategy = require('passport-local').Strategy;
 //const FacebookStrategy = require('passport-facebook').Strategy;
+//const FacebookStrategy = require('passport-facebook').Strategy;
 //const secret = require('../secret/secret');
 const User = require('../models/Users');
 
 passport.serializeUser((user, done) => {
-    done(null, user.id);
+  done(null, user.id);
 });
 
 passport.deserializeUser((id, done) => {
-    User.findByPk(id, (err, user) => {
-        done(err, user);
-    });
+  User.findByPk(id, (err, user) => {
+    done(err, user);
+  });
 });
 
 passport.use('local.signup', new LocalStrategy({
-    usernameField: 'username',
-    passwordField: 'password',
-    passReqToCallback: true
+  usernameField: 'username',
+  passwordField: 'password',
+  passReqToCallback: true
 }, (req, username, password, done) => {
-    User.findOne({ where: { username: username } }).then(user => {
-        if (user) {
-            return done(null, false, req.flash('error', 'A user with that username already exists in our system.'));
-        }
+  User.findOne({ where: { username: username } }).then(user => {
+    if (user) {
+      return done(null, false, req.flash('error', 'A user with that username already exists in our system.'));
+    }
 
-        var newUser = new User();
-        newUser.username = req.body.username;
-        newUser.firstName = req.body.firstName;
-        newUser.lastName = req.body.lastName;
-        newUser.email = req.body.email;
-        //newUser.password = newUser.encryptPassword(req.body.password);
-        newUser.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10), null); //bcrypt.hash(req.body.password, 10); //  
-        // newUserData.password = await bcrypt.hash(newUserData.password, 10);
-        //return newUserData;
+    var newUser = new User();
+    newUser.username = req.body.username;
+    newUser.firstName = req.body.firstName;
+    newUser.lastName = req.body.lastName;
+    newUser.email = req.body.email;
+    //newUser.password = newUser.encryptPassword(req.body.password);
+    newUser.password = bcrypt.hashSync(req.body.password, bcrypt.genSaltSync(10), null); //bcrypt.hash(req.body.password, 10); //  
+    // newUserData.password = await bcrypt.hash(newUserData.password, 10);
+    //return newUserData;
 
-        console.log("maybe")
-        //newUser.save((err) => {
-        console.log("here")
-        return done(null, newUser);
-        // });
-    })
+    console.log("maybe")
+    //newUser.save((err) => {
+    console.log("here")
+    return done(null, newUser);
+    // });
+  })
 }));
 
 

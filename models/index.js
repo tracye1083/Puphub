@@ -2,6 +2,7 @@ const User = require('./Users');
 const Company = require('./Companies');
 const Review = require('./Reviews');
 
+
 Company.hasMany(Review, {
     foreignKey: 'company_id',
 });

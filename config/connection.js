@@ -11,5 +11,5 @@ const sequelize = new Sequelize(
     port: 3306,
   }
 );
-
+console.log("connectend")
 module.exports = sequelize;

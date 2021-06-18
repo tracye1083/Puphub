@@ -19,9 +19,11 @@ router.post('/signup', async (req, res) => {
         });
 
         req.session.save(() => {
+            req.session.user_id = userData.id;
+            req.session.username = userData.username;
+            req.session.userFirstName = userData.firstName;
             req.session.loggedIn = true;
-
-            res.status(200).json(userData);
+            res.render('homepage', { userFirstName: req.session.userFirstName, loggedIN: req.session.loggedIn })
         });
     } catch (err) {
         console.log(err);

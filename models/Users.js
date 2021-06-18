@@ -63,6 +63,11 @@ User.init(
                 len: [6],
             },
         },
+        isAdmin: {
+            type: DataTypes.BOOLEAN,
+            allowNull: false,
+            defaultValue: false,
+        },
     },
     {
         hooks: {

@@ -52,7 +52,7 @@ router.get('/', async (req, res) => {
     // Serialize data so the template can read it
     const companies = companyData.map((company) => company.get({ plain: true }));
     if (!req.session.loggedIn) {
-        res.render('companies', { companies, loggedIN: req.session.loggedIn })
+        res.render('landingpage', { companies, loggedIN: req.session.loggedIn })
     }
     else {
         res.render('homepage', { userFirstName: req.session.userFirstName, loggedIN: req.session.loggedIn })
@@ -61,15 +61,21 @@ router.get('/', async (req, res) => {
 
 
 router.get('/addCompany', async (req, res) => {
-    const companyData = await Company.findAll({});
+    // const companyData = await Company.findAll({});
 
     // Serialize data so the template can read it
-    const companies = companyData.map((company) => company.get({ plain: true }));
-    res.render('company', { companies })
+    // const companies = companyData.map((company) => company.get({ plain: true }));
+    res.render('addCompany', { loggedIN: req.session.loggedIn })
 })
 
-//Code for the GET routes follows:
+//Code for the adding reviews:
+router.get('/addReview', async (req, res) => {
+    // const companyData = await Company.findAll({});
 
+    // Serialize data so the template can read it
+    //const companies = companyData.map((company) => company.get({ plain: true }));
+    res.render('addReview', { loggedIN: req.session.loggedIn })
+})
 
 //Get te reviews for a specific company:
 // GET the company by ID
@@ -90,7 +96,7 @@ router.get('/company/:id', async (req, res) => {
         });
 
         const company = companyData.get({ plain: true });
-        res.render('reviews', { company }) // will need once we add login, loggedIn: req.session.loggedIn });
+        res.render('reviews', { company, userFirstName: req.session.userFirstName, loggedIN: req.session.loggedIn })
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
@@ -104,7 +110,7 @@ router.get('/companies', async (req, res) => {
     // Serialize data so the template can read it
     const companies = companyData.map((company) => company.get({ plain: true }));
     if (req.session.loggedIn) {
-        res.render('companies', { companies, loggedIN: req.session.loggedIn })
+        res.render('companies', { companies, userFirstName: req.session.userFirstName, loggedIN: req.session.loggedIn })
     }
 
 })

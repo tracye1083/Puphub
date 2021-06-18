@@ -18,7 +18,7 @@ router.post('/', async (req, res) => {
             webAddress: req.body.company_webAddress,
         }*/
         )
-        res.status(200).json(CompanyData)
+        res.render('homepage', { userFirstName: req.session.userFirstName, loggedIN: req.session.loggedIn })
     }
     catch (err) {
         console.log(err);

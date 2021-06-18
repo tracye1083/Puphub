@@ -1,44 +1,43 @@
 {
-  "name": "project2",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "test": "echo \"Error: no testing specified\" && exit 1",
-    "start": "node server.js",
-    "dev": "nodemon server.js"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tracye1083/Project2.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tracye1083/Project2/issues"
-  },
-  "homepage": "https://github.com/tracye1083/Project2#readme",
-  "dependencies": {
-    "bcrypt": "^5.0.1",
-    "body-parser": "^1.19.0",
-    "connect-flash": "^0.1.1",
-    "connect-session-sequelize": "^7.1.1",
-    "dotenv": "^10.0.0",
-    "eslint": "^7.28.0",
-    "eslint-config-prettier": "^8.3.0",
-    "express": "^4.17.1",
-    "express-handlebars": "^5.3.2",
-    "express-session": "^1.17.2",
-    "handlebars": "^4.7.7",
-    "handlebars-loader": "^1.7.1",
-    "handlebars-webpack-plugin": "^2.2.1",
-    "modules": "^0.4.0",
-    "mysql2": "^2.2.5",
-    "node": "^16.3.0",
-    "nodemon": "^2.0.7",
-    "passport": "^0.4.1",
-    "passport-local": "^1.0.0",
-    "prettier": "^2.3.1",
-    "sequelize": "^6.6.2"
-  }
+    "name": "project2",
+    "version": "1.0.0",
+    "description": "",
+    "main": "server.js",
+    "scripts": {
+        "test": "echo \"Error: no testing specified\" && exit 1",
+        "start": "node server.js",
+        "dev": "nodemon server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/tracye1083/Project2.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/tracye1083/Project2/issues"
+    },
+    "homepage": "https://github.com/tracye1083/Project2#readme",
+    "dependencies": {
+        "bcrypt": "^5.0.1",
+        "body-parser": "^1.19.0",
+        "connect-flash": "^0.1.1",
+        "connect-session-sequelize": "^7.1.1",
+        "dotenv": "^10.0.0",
+        "eslint": "^7.28.0",
+        "eslint-config-prettier": "^8.3.0",
+        "express": "^4.17.1",
+        "express-handlebars": "^5.3.2",
+        "express-session": "^1.17.2",
+        "handlebars": "^4.7.7",
+        "modules": "^0.4.0",
+        "mysql2": "^2.2.5",
+        "node": "^16.3.0",
+        "nodemon": "^2.0.7",
+        "passport": "^0.4.1",
+        "passport-local": "^1.0.0",
+        "prettier": "^2.3.1",
+        "sequelize": "^6.6.2"
+    }
 }
+

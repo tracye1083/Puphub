@@ -62,8 +62,6 @@ Stuff and things.
 - [MySQL2](https://www.npmjs.com/package/mysql2)
 - [node](https://www.npmjs.com/package/node)
 - [nodemon](https://www.npmjs.com/package/nodemon)
-- [passport](https://www.npmjs.com/package/passport)
-- [passport-local](https://www.npmjs.com/package/passport-local)
 - [prettier](https://www.npmjs.com/package/prettier)
 - [Sequelize](https://www.npmjs.com/package/sequelize)
 
@@ -95,7 +93,11 @@ Stuff and things.
 
 ## User Story
 
-Insert awesome story here.
+```md
+JANET has a new puppy,
+SHE WANTS to find services in her area with positive reviews
+SO THAT she can get the best for her new fur baby.
+```
 
 ***
 

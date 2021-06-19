@@ -15,7 +15,7 @@
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
         <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar bg-success"></p></span>
+        <span class="icon-bar bg-success"><p>testaa</p></span>
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
@@ -37,55 +37,22 @@
     </div>
   </div>
 </nav>
-        <div class="container-fluid main_body">
-           <div class="row">
-            {{#if loggedIN}}                
-            <h1>Hello, {{userFirstName}}</h1>
-            <p>Here is a listing of companies with reviews.  </p>
-                {{#each companies as |company| }}
-                <div class="row mb-4 project complist">
-                    <div class="">
-                        <h2>
-                        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-                        {{{get_emoji}}}
-                        <a href="/api/companies/company/{{company.id}}">{{company.name}}</a>
-                        </h2>
+                <h4>Search for Companies By Zip Code</h4>
+                
+                <form method="POST" action="/api/companies/searchZipCode"> <!--"/api/search/:zipCode">-->
+                    <div class="form-group ">
+                        <label for="">Zip Code:</label>
+                        <span id="errorMsg4"></span>
+                        <input id="searchZipCode" class="form-control" name="searchZipCode" type="text" style="margin-bottom:20px;">
                     </div>
-                    <div class="">
-                        <p>
-                        {{company.category}} Rating: {{company.rating}}
-                        </p>
+                    <div class="form-group">
+                        <input type="submit" id="search" value="Search" class="form-control btn btn-primary" name="search" style="">
                     </div>
-                </div>
-                {{/each}}
-            {{else}}          
-                <h1>Hello, welcome to Dog Day Reviews</h1>
-                <p>Here is a listing of companies with reviews.  To read a review, please <a href="/login">Login</a>.</p>                                 
-                {{#each companies as |company| }}
-                <div class="row mb-4 project complist">
-                <div class="col-md-5">
-                    <h2>
-                    <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-                    {{{get_emoji}}}
-                    {{company.name}}
-                    </h2>
-                </div>
-                <div class="col-md-7">
-                    <p>
-                    {{company.category}} Rating: {{company.rating}}
-                    </p>
-                </div>
-                </div>
-                {{/each}}
-            {{/if}}
-                </div>
-
-             </div>
-            
-        </div>
-    </div>
-
-</div>
+                </form>
+ <!-- <form name="myform" action="javascript:handleIt(lastname.value)">  
+   <input type="text" name="lastname" id="lastname" maxlength="40"> 
+   <input name="Submit"  type="submit" value="Update"/>
+  </form>                -->
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -101,5 +68,12 @@
         $("#wrapper").toggleClass("toggled");
     });
     </script>
+
+      <script type="text/javascript">
+   function handleIt(txt) {   // txt == content of form input
+    alert("Entered value: " + txt);
+   }
+  </script>
+
 
 

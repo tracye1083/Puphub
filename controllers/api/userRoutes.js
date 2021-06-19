@@ -1,9 +1,9 @@
-
+//These are the heavy lifting for user signup and login
 console.log("comp-beg")
 const router = require('express').Router();
 const { User } = require('../../models');
 
-// CREATE new user
+// This is the SIGNUP route, this will CREATE new user
 router.post('/signup', async (req, res) => {
     try {
         console.log(`username: ${req.body.username}`)
@@ -13,11 +13,8 @@ router.post('/signup', async (req, res) => {
             lastName: req.body.lastName,
             email: req.body.email,
             password: req.body.password,
-            //username: req.body.username,
-            //email: req.body.email,
-            //password: req.body.password,
         });
-
+        //Save some info into session variables for greetings and later use
         req.session.save(() => {
             req.session.user_id = userData.id;
             req.session.username = userData.username;
@@ -59,29 +56,17 @@ router.post('/login', async (req, res) => {
                 req.session.user_id = userData.id;
                 req.session.username = userData.username;
                 req.session.userFirstName = userData.firstName;
+                req.session.isAdmin = userData.isAdmin;
                 req.session.loggedIn = true;
-                res.render('homepage', { userFirstName: req.session.userFirstName, loggedIN: req.session.loggedIn })
+                res.render('homepage', { userFirstName: req.session.userFirstName, isAdmin: req.session.isAdmin, loggedIN: req.session.loggedIn })
             });
-            //req.session.loggedIn = true;
-            //res.render('homepage', { userFirstName: userData.firstName, loggedIN: req.session.loggedIn })
-            //res
-            //   .status(200)
-            ///  .json({ user: userData, message: 'You are now logged in!' });
         });
-
     } catch (err) {
         console.log(err);
         res.status(500).json(err);
     }
 });
 
-
-
-
-
 module.exports = router;
 
 
-//router.get('/', function (req, res, next) {
-//    res.render('homepage')
-//})

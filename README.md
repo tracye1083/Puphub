@@ -47,8 +47,11 @@ Stuff and things.
 
 ## NPM Packages Used
 
+- [@fortawesome/fontawesome-free](https://www.npmjs.com/package/@fortawesome/fontawesome-free)
+- [autoprefixer](https://www.npmjs.com/package/autoprefixer)
 - [bcrypt](https://www.npmjs.com/package/bcrypt)
 - [body-parser](https://www.npmjs.com/package/body-parser)
+- [Bootstrap](https://www.npmjs.com/package/bootstrap)
 - [connect-flash](https://www.npmjs.com/package/connect-flash)
 - [connect-session-sequelize](https://www.npmjs.com/package/connect-session-sequelize)
 - [dotenv](https://www.npmjs.com/package/dotenv)
@@ -62,9 +65,9 @@ Stuff and things.
 - [MySQL2](https://www.npmjs.com/package/mysql2)
 - [node](https://www.npmjs.com/package/node)
 - [nodemon](https://www.npmjs.com/package/nodemon)
-- [passport](https://www.npmjs.com/package/passport)
-- [passport-local](https://www.npmjs.com/package/passport-local)
+- [postcss-cli](https://www.npmjs.com/package/postcss-cli)
 - [prettier](https://www.npmjs.com/package/prettier)
+- [Sass](https://www.npmjs.com/package/sass)
 - [Sequelize](https://www.npmjs.com/package/sequelize)
 
 ***
@@ -95,7 +98,11 @@ Stuff and things.
 
 ## User Story
 
-Insert awesome story here.
+```md
+JANET has a new puppy,
+SHE WANTS to find services in her area with positive reviews
+SO THAT she can get the best for her new fur baby.
+```
 
 ***
 

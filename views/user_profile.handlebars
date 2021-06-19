@@ -1,0 +1,107 @@
+
+    <div id="wrapper">
+    <div class="bg-success" id="sidebar-wrapper"  >
+        <div class="sidebar-brand">
+            <p class="text-white"></p>test456</p>
+        </div>
+
+        <ul class="sidebar-nav bg-danger">
+           <li class="bg-danger"><a href="/api/companies">Companies</a></li>           
+           <li class="bg-danger"><a href="/api/reviews">Reviews</a></li>
+           <li class="bg-danger"><a href="/api/users">Users</a></li>
+        </ul>
+    </div>
+    
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar bg-success"><p>testaa</p></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars"></i></a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      
+      <ul class="nav navbar-nav navbar-right nav_bar">
+        {{#if loggedIN}}
+            <li><a href="/logout">Logout</a></li>
+        {{else}}
+            <li><a href="/login">Login</a></li>
+            <li><a href="/signup">Sign Up</a></li>
+        {{/if}}
+        <li><a href="/">Home</a></li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+        <div class="container-fluid main_body">
+            <h1>Hello, {{user.firstName}}</h1>
+            <p>Here is a listing of profile data: {{company.name}} </p>
+                <form action="/action_page.php">
+                  <label for="fname">First name:</label>
+                  <input type="text" id="fname" name="fname" value="{{user.firstName}}"><br>
+                  <label for="lname">Last name:</label>
+                  <input type="text" id="lname" name="lname" value="{{user.lastName}}"><br>
+                  <label for="address">Address:</label>
+                  <input type="text" id="address" name="address" value="{{user.address}}"><br>
+                  <label for="city">City:</label>
+                  <input type="text" id="city" name="city" value="{{user.city}}"><br>
+                  <label for="state">State:</label>
+                  <input type="text" id="state" name="state" value="{{user.state}}"><br>
+                  <label for="zipCode">Zip Code:</label>
+                  <input type="text" id="zipCode" name="zipCode" value="{{user.zipCode}}"><br>
+                  <label for="eMail">eMail:</label>
+                  <input type="text" id="eMail" name="eMail" value="{{user.email}}"><br><br>
+                  <label for="pheNum">Phone Num:</label>
+                  <input type="text" id="pheNum" name="pheNum" value="{{user.phone}}"><br><br>
+                  {{#if isAdmin}}
+                      <label for="isAdmin">Is Admin:</label>
+                      <input type="text" id="isAdmin" name="isAdmin" value="{{user.isAdmin}}"><br><br> 
+                  {{/if}}                 
+                   <input type="submit" value="Submit">
+                </form>
+            <div class="row">
+               
+                <div class="row mb-4 project">
+                <div class="col-md-5">
+                    <h2>
+                    <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+                    {{{get_emoji}}}
+                    {{company.name}}
+                    </h2>
+                </div>
+
+                </div>
+                    {{#each user.reviews as |review| }}
+                    {{> review-details}}
+                    {{/each}}
+
+               </div>
+
+             </div>
+            
+        </div>
+    </div>
+
+</div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+    <!-- Menu Toggle Script -->
+    <script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+    });
+    </script>
+
+

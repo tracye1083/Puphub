@@ -36,7 +36,7 @@
     </div>
 
         <div class="container-fluid main_body">
-           <h1>Hello, {{userFirstName}}</h1>
+           <h1>Hello, {{userFirstName}} {{isAdmin}}</h1>
            <p>What would you like to do today?</p>
            
             <div class="row">
@@ -65,7 +65,7 @@
                     <div class="info-icon"><i class="fa fa-sign-in"></i></div>
                     <h3 class="text-center">My Profile</h3>
                     <p class="text-center">View and update your profile data.<br>Tell us about you.</p>
-                    <a href="/api/companies/addCompany" class="btn btn-block btn-primary link_btn">View Profile</a>
+                    <a href="/api/users/user/{{userId}}" class="btn btn-block btn-primary link_btn">View Profile</a>
                 </div>                              
             </div>
             {{#if isAdmin}}

@@ -1,75 +1,71 @@
-    
+<div class= "container">    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right nav_bar">
+        <ul class="nav navbar-nav navbar-right nav_bar">
         {{#if loggedIN}}
             <li><a href="/logout">Logout</a></li>
         {{else}}
             <li><a href="/login">Login</a></li>
             <li><a href="/signup">Sign Up</a></li>
         {{/if}}
-        <li><a href="/">Home</a></li>
-        
-      </ul>
+            <li><a href="/">Home</a></li>
+        </ul>
     </div>
-  </div>
-</nav>
-                <h4>Add A New Company</h4>
-                
-                <form method="POST" action="/api/companies">
+    <h4>Add A New Company</h4>
+        <div class="row login">        
+            <form method="POST" action="/api/companies">
+                <div class="form-group ">
+                    <label for="">Company Name:</label>
+                    <span id="errorMsg1"></span>
+                    <input id="name" class="form-control" name="name" type="text" style="margin-bottom:20px;">
+                </div>
 
-                    <div class="form-group ">
-                        <label for="">Company Name:</label>
-                        <span id="errorMsg1"></span>
-                        <input id="name" class="form-control" name="name" type="text" style="margin-bottom:20px;">
-                    </div>
+                <div class="form-group ">
+                    <label for="">Phone:</label>
+                    <span id="errorMsg2"></span>
+                    <input id="phone" class="form-control" name="phone" type="text" style="margin-bottom:20px;">
+                </div>
 
-                    <div class="form-group ">
-                        <label for="">Phone:</label>
-                        <span id="errorMsg2"></span>
-                        <input id="phone" class="form-control" name="phone" type="text" style="margin-bottom:20px;">
-                    </div>
+                <div class="form-group ">
+                    <label for="">Address:</label>
+                    <span id="errorMsg2"></span>
+                    <input id="address" class="form-control" name="address" type="text" style="margin-bottom:20px;">
+                </div>
 
-                    <div class="form-group ">
-                        <label for="">Address:</label>
-                        <span id="errorMsg2"></span>
-                        <input id="address" class="form-control" name="address" type="text" style="margin-bottom:20px;">
-                    </div>
+                <div class="form-group ">
+                    <label for="">City:</label>
+                    <span id="errorMsg3"></span>
+                    <input id="city" class="form-control" name="city" type="text" style="margin-bottom:20px;">
+                </div>
 
-                    <div class="form-group ">
-                        <label for="">City:</label>
-                        <span id="errorMsg3"></span>
-                        <input id="city" class="form-control" name="city" type="text" style="margin-bottom:20px;">
-                    </div>
+                <div class="form-group ">
+                    <label for="">State:</label>
+                    <span id="errorMsg4"></span>
+                    <input id="state" class="form-control" name="state" type="text" style="margin-bottom:20px;">
+                </div>
 
-                    <div class="form-group ">
-                        <label for="">State:</label>
-                        <span id="errorMsg4"></span>
-                        <input id="state" class="form-control" name="state" type="text" style="margin-bottom:20px;">
-                    </div>
+                <div class="form-group ">
+                    <label for="">Zip Code:</label>
+                    <span id="errorMsg4"></span>
+                    <input id="zipCode" class="form-control" name="zipCode" type="text" style="margin-bottom:20px;">
+                </div>
 
-                    <div class="form-group ">
-                        <label for="">Zip Code:</label>
-                        <span id="errorMsg4"></span>
-                        <input id="zipCode" class="form-control" name="zipCode" type="text" style="margin-bottom:20px;">
-                    </div>
+                <div class="form-group ">
+                    <label for="">Category:</label>
+                    <span id="errorMsg5"></span>
+                    <input id="category" class="form-control" name="category" type="text" style="margin-bottom:20px;">
+                </div>
 
-                    <div class="form-group ">
-                        <label for="">Category:</label>
-                        <span id="errorMsg5"></span>
-                        <input id="category" class="form-control" name="category" type="text" style="margin-bottom:20px;">
-                    </div>
-
-                    <div class="form-group ">
-                        <label for="">Website</label>
-                        <span id="errorMsg6"></span>
-                        <input id="webAddress" class="form-control" name="webAddress" type="text" style="margin-bottom:20px;">
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" id="register" value="Register" class="form-control btn btn-primary" name="register" style="">
-                    </div>
-
-                </form>
+                <div class="form-group ">
+                    <label for="">Website</label>
+                    <span id="errorMsg6"></span>
+                    <input id="webAddress" class="form-control" name="webAddress" type="text" style="margin-bottom:20px;">
+                </div>
+                <div class="form-group">
+                    <input type="submit" id="register" value="Register" class="form-control btn btn-primary" name="register" style="">
+                </div>
+            </form>
+        </div>
+    </div>            
     <!-- /#wrapper -->
 
     <!-- jQuery -->
@@ -78,12 +74,4 @@
     <!-- Bootstrap Core JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
-
-
+ 

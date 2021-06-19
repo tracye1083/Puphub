@@ -10731,9 +10731,14 @@ textarea.form-control-lg {
 }
 .navbar {
   background-color: #84b0aa;
+}
+
+.navbar {
+  background-color: #84b0aa;
   flex-direction: row;
   top: 0px;
   width: 100%;
+  color: #ffe782;
 }
 .navbar .links {
   align-content: flex-end;
@@ -10741,14 +10746,6 @@ textarea.form-control-lg {
 }
 .navbar .links a {
   padding: 1px;
-}
-
-body {
-  background-image: url("../../images/tealPaws.png");
-}
-
-.navbar {
-  background-color: #84b0aa;
 }
 
 .container {
@@ -10763,6 +10760,10 @@ body {
   width: 100%;
   height: auto;
   margin-top: -18rem;
+}
+
+body {
+  background-image: url("../../images/tealPaws.png");
 }
 
 /*# sourceMappingURL=style.css.map */

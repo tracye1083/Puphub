@@ -1,0 +1,18 @@
+@use '../custom' as *;
+
+.navbar {
+    background-color: $primary;
+    flex-direction: row;
+    top: 0px;
+    width: 100%;
+    color: $secondary;
+
+    .links {
+        align-content: flex-end;
+        margin-bottom: 0px;
+
+        a {
+            padding: 1px;
+        }
+    }
+}

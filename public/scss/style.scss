@@ -1,0 +1,20 @@
+@use 'custom';
+
+// IMPORT COMPONENTS
+
+// IMPORT SECTIONS
+
+@use 'sections/addCompany';
+@use 'sections/addReview';
+@use 'sections/companies';
+@use 'sections/footer';
+@use 'sections/header';
+@use 'sections/homepage';
+@use 'sections/landingpage';
+@use 'sections/login';
+@use 'sections/logout';
+@use 'sections/main';
+@use 'sections/reviews';
+@use 'sections/search';
+@use 'sections/signup';
+@use 'sections/userProfile';

@@ -5,7 +5,7 @@ const exphbs = require('express-handlebars');
 //const engine = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 //const passport = require('passport');
-const flash = require('connect-flash');
+// const flash = require('connect-flash');
 
 const routes = require('./controllers');
 const sequelize = require('./config/connection');
@@ -26,7 +26,7 @@ const sess = {
 };
 app.use(session(sess));
 
-app.use(flash());
+// app.use(flash());
 //app.use(passport.initialize());
 //app.use(passport.session());
 

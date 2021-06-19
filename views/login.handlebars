@@ -1,110 +1,35 @@
-
-    <div id="wrapper">
-        <div id="sidebar-wrapper">
-        <div class="sidebar-brand">
-            
-        </div>
-
-        <ul class="sidebar-nav">
-           <li class="bg-danger"><a href="/api/companies">Companies</a></li>           
-           <li class="bg-danger"><a href="/api/reviews">Reviews</a></li>
-           <li class="bg-danger"><a href="/api/users">Users</a></li>
-        </ul>
+<div class= "container">
+    <div class="overlay">
+        <img class="img" src="images/upPups.png">
     </div>
-
-
-   
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a href="#menu-toggle" class="btn btn-default" id="menu-toggle"><i class="fa fa-bars"></i></a>
-    </div>
-
-    
-     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right nav_bar">
-        {{#if loggedIN}}
-            <li><a href="/logout">Logout</a></li>
-        {{else}}
-            <li><a href="/login">Login</a></li>
-            <li><a href="/signup">Sign Up</a></li>
-        {{/if}}
-        <li><a href="/">Home</a></li>
-        
-      </ul>
-    </div>
-
-    <br><br>
     <div class="text-center reg_msg">
-        <h1><a href="/">Dog Day Reviews</a></h1>
-    </div>
-   <br><br>
-   
-   <div class="col-md-offset-4">
-         <a href="/auth/facebook" class="btn btn-block btn-social btn-facebook btn-lg">
-            <i class="fa fa-facebook"></i> Login with Facebook
-        </a>
-    </div><br>
-
-
-   <div class="text-center reg_msg">
         <h2 class="fancy"><span>LOGIN</span></h2>
-   </div><br>
-
-    <div class="row login">
-        
- 
-
+   </div>
+   <div class="row login">
         <form method="POST" class="" id="loginForm" action="/api/users/login">
 
             <div class="form-group input_group">
                 <input id="username" class="form-control" name="username" type="text" autocomplete="on" placeholder="USERNAME" style="margin-bottom:20px;">
             </div>
-
             <div class="form-group input_group">
                 <input id="password" class="form-control" name="password" type="password" placeholder="PASSWORD" style="margin-bottom:20px;">
             </div>
-
-
             <div class="form-group">
                 <input type="submit" id="submit" value="LOGIN" class="form-control btn btn-primary" name="submit" style="">
             </div>
-
           </form>
-
           <div>
               <h4>Don't have an account? <a href="/signup">SignUp</a></h4>
           </div>
-
-
     </div>
-</div>
-<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-    
-    
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-<script src="/js/upload.js"></script>
-
-<script src="/js/validate.js"></script>
-
-<script src="/js/chat.js"></script>
-
-
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+</div> 
+ 
+ 
+ 
+   
+   
+   {{!-- <div class="col-md-offset-4">
+         <a href="/auth/facebook" class="btn btn-block btn-social btn-facebook btn-lg">
+            <i class="fa fa-facebook"></i> Login with Facebook
+        </a>
+    </div><br> --}}

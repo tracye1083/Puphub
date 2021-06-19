@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="navbar">
+    <img class="img" src="images/pupHubLogo.png">
+    <ul class="links">
+      {{#if loggedIN}}
+      
+        <a href="/logout">Logout</a>
+      
+    {{else}}
+      <a href="/login">Login</a>
+      <a href="/signup">Sign Up</a>
+    {{/if}}
+      <a href="/">Home</a>
+
+    </ul>
+    
+  </div>
+</nav>

@@ -1,21 +1,17 @@
-
+<div class= "container">    
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-      
-      <ul class="nav navbar-nav navbar-right nav_bar">
+        <ul class="nav navbar-nav navbar-right nav_bar">
         {{#if loggedIN}}
             <li><a href="/logout">Logout</a></li>
         {{else}}
             <li><a href="/login">Login</a></li>
             <li><a href="/signup">Sign Up</a></li>
         {{/if}}
-        <li><a href="/">Home</a></li>
-        
-      </ul>
+            <li><a href="/">Home</a></li>
+        </ul>
     </div>
-  </div>
-</nav>
-        <div class="container-fluid main_body">
-           <div class="row">
+    <div class="container-fluid main_body">
+        <div class="row">
             {{#if loggedIN}}                
             <h1>Hello, {{userFirstName}}</h1>
             <p>Here is a listing of companies with reviews.  </p>
@@ -40,28 +36,23 @@
                 <p>Here is a listing of companies with reviews.  To read a review, please <a href="/login">Login</a>.</p>                                 
                 {{#each companies as |company| }}
                 <div class="row mb-4 project complist">
-                <div class="col-md-5">
-                    <h2>
-                    <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-                    {{{get_emoji}}}
-                    {{company.name}}
-                    </h2>
-                </div>
-                <div class="col-md-7">
-                    <p>
-                    {{company.category}} Rating: {{company.rating}}
-                    </p>
-                </div>
+                    <div class="col-md-5">
+                        <h2>
+                        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+                        {{{get_emoji}}}
+                        {{company.name}}
+                        </h2>
+                    </div>
+                    <div class="col-md-7">
+                        <p>
+                        {{company.category}} Rating: {{company.rating}}
+                        </p>
+                    </div>
                 </div>
                 {{/each}}
             {{/if}}
-                </div>
-
-             </div>
-            
         </div>
     </div>
-
 </div>
     <!-- /#wrapper -->
 
@@ -71,12 +62,7 @@
     <!-- Bootstrap Core JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
-    <!-- Menu Toggle Script -->
-    <script>
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#wrapper").toggleClass("toggled");
-    });
-    </script>
+ 
+
 
 

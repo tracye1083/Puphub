@@ -2,7 +2,6 @@ const path = require('path');
 const express = require('express');
 const session = require('express-session');
 const exphbs = require('express-handlebars');
-//const engine = require('express-handlebars');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
 //const passport = require('passport');
 // const flash = require('connect-flash');
@@ -41,7 +40,6 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(routes);
-
 
 // sync sequelize models to the database, then turn on the server
 sequelize.sync({ force: false }).then(() => {

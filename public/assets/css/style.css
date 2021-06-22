@@ -10804,17 +10804,11 @@ h1 {
 .container-fluid {
   background-color: #84b0aa;
   position: relative;
-  margin-top: 20rem;
+  margin-top: 5rem;
   margin-bottom: 5rem;
   padding-bottom: 5rem;
   padding-top: 5rem;
   color: #fff;
-}
-.container-fluid .img-fluid {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  margin-top: -23rem;
 }
 
 body {

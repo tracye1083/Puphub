@@ -1,0 +1,15 @@
+@use '../custom' as *;
+
+.container {
+    background-color: $primary;
+    position: relative;
+    margin-top: 20rem;
+    margin-bottom: 15rem;
+    color: $white;
+        .img {
+            display: absolute;
+            width: 100%;
+            height: auto;
+            margin-top: -18rem;
+        }
+}

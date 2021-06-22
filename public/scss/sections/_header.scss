@@ -1,6 +1,13 @@
 @use '../custom' as *;
 
+// @mixin width(width) {
+//     min-width: width;
+//     max-width: width;
+//     width: width;
+// }
+
 .navbar {
+    // @include width(100px);
     background-color: $primary;
     flex-direction: row;
     top: 0px;

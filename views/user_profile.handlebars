@@ -1,29 +1,48 @@
-<div class= "container">    
+<div >    
     <h1>Hello, {{user.firstName}}</h1>
     <p>Here is a listing of profile data: {{company.name}} </p>
-    <div class="row login"></div>
+    <div class="row login">
         <form action="/action_page.php">
-            <label for="fname">First name:</label>
-            <input type="text" id="fname" name="fname" value="{{user.firstName}}"><br>
-            <label for="lname">Last name:</label>
-            <input type="text" id="lname" name="lname" value="{{user.lastName}}"><br>
-            <label for="address">Address:</label>
-            <input type="text" id="address" name="address" value="{{user.address}}"><br>
-            <label for="city">City:</label>
-            <input type="text" id="city" name="city" value="{{user.city}}"><br>
-            <label for="state">State:</label>
-            <input type="text" id="state" name="state" value="{{user.state}}"><br>
-            <label for="zipCode">Zip Code:</label>
-            <input type="text" id="zipCode" name="zipCode" value="{{user.zipCode}}"><br>
-            <label for="eMail">eMail:</label>
-            <input type="text" id="eMail" name="eMail" value="{{user.email}}"><br><br>
-            <label for="pheNum">Phone Num:</label>
-            <input type="text" id="pheNum" name="pheNum" value="{{user.phone}}"><br><br>
-            {{#if isAdmin}}
-                <label for="isAdmin">Is Admin:</label>
-                <input type="text" id="isAdmin" name="isAdmin" value="{{user.isAdmin}}"><br><br> 
-            {{/if}}                 
-            <input type="submit" value="Submit">
+            <div class="form-group ">
+                <label for="fname">First name:</label>
+                <input class="form-control" type="text" id="fname" name="fname" value="{{user.firstName}}" style="margin-bottom:10px;"><br>
+            </div>
+            <div class="form-group ">
+                <label for="lname">Last name:</label>
+                <input class="form-control" type="text" id="lname" name="lname" value="{{user.lastName}}" style="margin-bottom:10px;"><br>
+            </div>
+            <div class="form-group ">
+                <label for="address">Address:</label>
+                <input class="form-control" type="text" id="address" name="address" value="{{user.address}}" style="margin-bottom:10px;"><br>
+            </div>
+            <div class="form-group ">
+                <label for="city">City:</label>
+                <input class="form-control" type="text" id="city" name="city" value="{{user.city}}" style="margin-bottom:10px;"><br>
+            </div>
+            <div class="form-group ">
+                <label for="state">State:</label>
+                <input class="form-control" type="text" id="state" name="state" value="{{user.state}}" style="margin-bottom:10px;"><br>
+            </div>
+            <div class="form-group ">
+                <label for="zipCode">Zip Code:</label>
+                <input class="form-control" type="text" id="zipCode" name="zipCode" value="{{user.zipCode}}" style="margin-bottom:10px;"><br>
+            </div>
+            <div class="form-group ">
+                <label for="eMail">eMail:</label>
+                <input class="form-control" type="text" id="eMail" name="eMail" value="{{user.email}}" style="margin-bottom:10px;"><br>
+            </div>
+            <div class="form-group ">
+                <label for="pheNum">Phone Num:</label>
+                <input class="form-control" type="text" id="pheNum" name="pheNum" value="{{user.phone}}" style="margin-bottom:10px;"><br>
+            </div>
+            <div class="form-group ">
+                {{#if isAdmin}}
+                    <label for="isAdmin">Is Admin:</label>
+                    <input class="form-control" type="text" id="isAdmin" name="isAdmin" value="{{user.isAdmin}}" style="margin-bottom:10px;"><br>
+                {{/if}}                 
+            </div>
+            <div class="form-group ">
+                <input class="form-control btn btn-primary" type="submit" value="Submit">
         </form>
         <div class="row">
             <div class="row mb-4 project">
@@ -42,12 +61,4 @@
        </div>
     </div>
 </div>
-    <!-- /#wrapper -->
-
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-
-    <!-- Bootstrap Core JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
  

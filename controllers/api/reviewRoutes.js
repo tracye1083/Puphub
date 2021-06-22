@@ -32,6 +32,7 @@ router.post('/', withAuth, async (req, res) => {
                 user_id: req.session.user_id,
             }
         )
+        console.log(`UGGG: ${req.session.company_id}`)
         res.redirect('companies/company/' + req.session.company_id) //, { userFirstName: req.session.userFirstName, loggedIN: req.session.loggedIn })
     }
     catch (err) {

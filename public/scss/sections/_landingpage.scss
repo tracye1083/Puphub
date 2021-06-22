@@ -1,1 +1,17 @@
 @use '../custom' as *;
+
+.container {
+    background-color: $primary;
+    color: $white;
+    text-align: center;
+        .h1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+
+        .card-body {
+            width:auto;
+            color: black;
+            padding-bottom: 2rem;
+
+        }
+}

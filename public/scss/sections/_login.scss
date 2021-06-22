@@ -1,13 +1,13 @@
 @use '../custom' as *;
 
-.container {
+.container-fluid {
     background-color: $primary;
     position: relative;
     margin-top: 20rem;
     margin-bottom: 15rem;
     color: $white;
         .img {
-            display: absolute;
+            display: black;
             width: 100%;
             height: auto;
             margin-top: -18rem;

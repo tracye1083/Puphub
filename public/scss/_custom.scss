@@ -1,4 +1,4 @@
-//@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
 // WHITE AND GRAY
 $white:    #fff;
@@ -16,15 +16,3 @@ $black:    #000;
 // THEME COLORS
 $primary: #84b0aa ;
 $secondary: #ffe782;
-
-
-$spacer: 1rem;
-$spacers:
-(
-1: ($spacer * .5),
-2: $spacer,
-3: ($spacer * 1.5),
-4: ($spacer * 2),
-5: ($spacer * 3),
-6: ($spacer * 5)
-);

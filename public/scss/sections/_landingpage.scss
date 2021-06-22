@@ -2,9 +2,6 @@
 
 .container {
     background-color: $primary;
-    position: relative;
-    margin-top: 20rem;
-    margin-bottom: 15rem;
     color: $white;
     text-align: center;
         .h1 {
@@ -14,5 +11,7 @@
         .card-body {
             width:auto;
             color: black;
+            padding-bottom: 2rem;
+
         }
 }

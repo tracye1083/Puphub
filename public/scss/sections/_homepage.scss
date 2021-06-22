@@ -1,12 +1,5 @@
 @use '../custom' as *;
 
-.container {
-    background-color: $primary;
-    border-color: black;
-    border-style: solid;
-    width:90%;
-}
-
 .card {
     width: auto;
     background-color: #ffb469;
@@ -19,7 +12,6 @@
 }
 
 h2 {
-    text-shadow: none;
     font-size: medium;
 }
 

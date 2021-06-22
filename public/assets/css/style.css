@@ -10748,13 +10748,6 @@ textarea.form-control-lg {
   padding: 1px;
 }
 
-.container {
-  background-color: #84b0aa;
-  border-color: black;
-  border-style: solid;
-  width: 90%;
-}
-
 .card {
   width: auto;
   background-color: #ffb469;
@@ -10767,7 +10760,6 @@ textarea.form-control-lg {
 }
 
 h2 {
-  text-shadow: none;
   font-size: medium;
 }
 
@@ -10779,17 +10771,11 @@ h1 {
 }
 
 .container {
-  background-color: #84b0aa;
-  color: #fff;
-  text-align: center;
-  align-content: center;
-}
-.container h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  text-shadow: 2px 2px black;
+  align-items: center;
 }
 .container .card {
   position: relative;
+  display: flex;
   background-color: #ffb469;
   background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
   margin: 2rem;
@@ -10799,6 +10785,7 @@ h1 {
   padding: 2rem;
 }
 .container .img {
+  position: relative;
   border: 1;
   border-color: #ffe782;
   border-style: solid;
@@ -10806,22 +10793,28 @@ h1 {
   width: 50%;
   height: auto;
 }
+.container h2 {
+  font-size: large;
+  font-weight: bold;
+}
+.container h3 {
+  font-size: medium;
+}
 
 .container-fluid {
   background-color: #84b0aa;
   position: relative;
   margin-top: 20rem;
-  margin-bottom: 15rem;
+  margin-bottom: 5rem;
+  padding-bottom: 5rem;
+  padding-top: 5rem;
   color: #fff;
 }
-.container-fluid .img {
-  display: black;
+.container-fluid .img-fluid {
+  position: absolute;
   width: 100%;
   height: auto;
-  margin-top: -18rem;
-}
-.container-fluid .h4 {
-  text-align: center;
+  margin-top: -23rem;
 }
 
 body {

@@ -1,17 +1,10 @@
 @use '../custom' as *;
 
 .container {
-    background-color: $primary;
-    color: $white;
-    text-align: center;
-    align-content: center;
-            
-        h1 {
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            text-shadow: 2px 2px black;
-        }
+    align-items: center;
         .card {
             position: relative;
+            display: flex;
             background-color: #ffb469;
             background-image: radial-gradient( circle, #ffb469 5%, $secondary 95% );
             margin: 2rem;
@@ -22,12 +15,22 @@
         }
 
         .img {
+            position: relative;
             border: 1;
             border-color: $secondary;
             border-style: solid;
             background-color: $white;
             width:50%;
             height: auto;
+        }
+
+        h2 {
+            font-size: large;
+            font-weight: bold;
+        }
+        
+        h3 {
+            font-size: medium;
         }
 
 }

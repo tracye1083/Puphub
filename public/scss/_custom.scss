@@ -18,8 +18,13 @@ $primary: #84b0aa ;
 $secondary: #ffe782;
 
 
-
-
-
-
-
+$spacer: 1rem;
+$spacers:
+(
+1: ($spacer * .5),
+2: $spacer,
+3: ($spacer * 1.5),
+4: ($spacer * 2),
+5: ($spacer * 3),
+6: ($spacer * 5)
+);

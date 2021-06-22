@@ -4,19 +4,32 @@
     background-color: $primary;
     color: $white;
     text-align: center;
-        .h1 {
+    align-content: center;
+            
+        h1 {
             font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            text-shadow: 2px 2px black;
         }
-
-        .card-body {
-            width:auto;
-            color: black;
-            margin-bottom: 2rem;
+        .card {
+            position: relative;
+            background-color: #ffb469;
+            background-image: radial-gradient( circle, #ffb469 5%, $secondary 95% );
+            margin: 2rem;
+            color:black;
+            border: #ffb469;
+            border-style:solid;
+            padding: 2rem;
         }
 
         .img {
             border: 1;
             border-color: $secondary;
             border-style: solid;
+            background-color: $white;
+            width:50%;
+            height: auto;
         }
+
 }
+
+

@@ -11,7 +11,12 @@
         .card-body {
             width:auto;
             color: black;
-            padding-bottom: 2rem;
+            margin-bottom: 2rem;
+        }
 
+        .img {
+            border: 1;
+            border-color: $secondary;
+            border-style: solid;
         }
 }

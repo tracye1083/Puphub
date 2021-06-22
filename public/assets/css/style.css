@@ -10759,7 +10759,12 @@ textarea.form-control-lg {
 .container .card-body {
   width: auto;
   color: black;
-  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+.container .img {
+  border: 1;
+  border-color: #ffe782;
+  border-style: solid;
 }
 
 .container-fluid {

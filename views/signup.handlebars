@@ -1,19 +1,12 @@
-<div class= "container">
+<div class="container-fluid main_body">
     <div class="overlay">
-        <img class="img" src="images/upPups.png">
+        <img class="img mt-5" src="images/upPups.png">
     </div>
-
-
-   <div class="text-center reg_msg">
+    <div class="text-center ">
         <h2 class="fancy"><span>SIGN UP</span></h2>
-   </div><br>
-
+    </div><br>
     <div class="row signup">
-        
- 
-
         <form method="POST" class="" id="signupForm" action="/api/users/signup">
-
             <div class="row">
                 <div class="form-group col-xs-12 input_group">
                     <input id="firstName" class="form-control" name="firstName" type="text" autocomplete="on" placeholder="First Name" style="margin-top: 10px; margin-bottom:10px;" >
@@ -33,17 +26,14 @@
                 <input id="password" class="form-control" name="password" type="password" placeholder="PASSWORD" style="margin-bottom:10px;">
             </div>
 
-
             <div class="form-group">
                 <input type="submit" id="submit" value="SIGN UP" class="form-control btn btn-primary" name="submit" style="">
             </div>
 
-          </form>
-
-          <div>
-              <h4>Already have an account? <a href="/login">Login</a></h4>
-          </div>
         </form>
 
+        <div>
+            <h4>Already have an account? <a href="/login">Login</a></h4>
+        </div>
     </div>
 </div>

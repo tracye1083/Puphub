@@ -1,10 +1,9 @@
-console.log("comp-beg")
 const router = require('express').Router();
+const withAuth = require('../../utils/auth');
 const { Company, Review } = require('../../models');
 
-
 //Get All companies for the home page listing
-router.get('/companies', async (req, res) => {
+router.get('/companies', withAuth, async (req, res) => {
     const companyData = await Company.findAll({});
     // Serialize data so the template can read it
     const companies = companyData.map((company) => company.get({ plain: true }));
@@ -14,22 +13,10 @@ router.get('/companies', async (req, res) => {
 
 })
 
-
 // POST (Create) a new company
-router.post('/', async (req, res) => {
-    // create a new category
+router.post('/', withAuth, async (req, res) => {
     try {
         const CompanyData = await Company.create(req.body
-            /*{
-            name: req.body.company_name,
-            phone: req.body.company_phone,
-            address: req.body.company_address,
-            city: req.body.company_city,
-            state: req.body.company_state,
-            zipCode: req.body.company_zipCode,
-            category: req.body.company_category,
-            webAddress: req.body.company_webAddress,
-        }*/
         )
         res.render('homepage', { userFirstName: req.session.userFirstName, loggedIN: req.session.loggedIn })
     }
@@ -39,24 +26,17 @@ router.post('/', async (req, res) => {
     };
 });
 
-router.get('/addCompany', async (req, res) => {
-    // const companyData = await Company.findAll({});
-    // Serialize data so the template can read it
-    // const companies = companyData.map((company) => company.get({ plain: true }));
+router.get('/addCompany', withAuth, async (req, res) => {
     res.render('addCompany', { loggedIN: req.session.loggedIn })
 })
 
-router.get('/search', async (req, res) => {
-    // const companyData = await Company.findAll({});
-
-    // Serialize data so the template can read it
-    // const companies = companyData.map((company) => company.get({ plain: true }));
+router.get('/search', withAuth, async (req, res) => {
     res.render('search', { loggedIN: req.session.loggedIn })
 })
 
 //Get te reviews for a specific company:
 // GET the company by ID
-router.get('/company/:id', async (req, res) => {
+router.get('/company/:id', withAuth, async (req, res) => {
     try {
         const companyData = await Company.findByPk(req.params.id, {
             include: [
@@ -80,13 +60,13 @@ router.get('/company/:id', async (req, res) => {
     }
 });
 
-router.post('/searchZipCode', function (req, res, next) {
+router.post('/searchZipCode', withAuth, async (req, res) => {
     res.redirect('search/' + req.body.searchZipCode);
 });
 
 //Get te reviews for a specific company:
 // GET the company by zipcode
-router.get('/search/:zipCode', async (req, res) => {
+router.get('/search/:zipCode', withAuth, async (req, res) => {
     try {
         const companyData = await Company.findAll({
             where: {
@@ -114,7 +94,4 @@ router.get('/search/:zipCode', async (req, res) => {
     }
 });
 
-
-
-console.log("comp-end")
 module.exports = router;

@@ -1,20 +1,15 @@
-<div class= "container">    
-                 <h4>Search for Companies By Zip Code</h4>
-                
-                <form method="POST" action="/api/companies/searchZipCode"> <!--"/api/search/:zipCode">-->
-                    <div class="form-group ">
-                        <label for="">Zip Code:</label>
-                        <span id="errorMsg4"></span>
-                        <input id="searchZipCode" class="form-control" name="searchZipCode" type="text" style="margin-bottom:20px;">
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" id="search" value="Search" class="form-control btn btn-primary" name="search" style="">
-                    </div>
-                </form>
- 
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<div class="container-fluid main_body">    
+    <h4>Search for Companies By Zip Code</h4>
+    
+    <form method="POST" action="/api/companies/searchZipCode"> <!--"/api/search/:zipCode">-->
+        <div class="form-group ">
+            <label for="">Zip Code:</label>
+            <span id="errorMsg4"></span>
+            <input id="searchZipCode" class="form-control" name="searchZipCode" type="text" style="margin-bottom:20px;">
+        </div>
+        <div class="form-group">
+            <input type="submit" id="search" value="Search" class="form-control btn btn-primary" name="search" style="">
+        </div>
+    </form>
 
-    <!-- Bootstrap Core JavaScript -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-
+  

@@ -1,4 +1,4 @@
-# PupHub
+# Puphub
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -6,7 +6,7 @@ Group Project #2 for UNH Full-Stack Web Development Boot Camp.
 
 ***
 
-## PupHub Development Team Members
+## Puphub Development Team Members
 
 - [Tracy Angell](https://www.github.com/tracye1083)
 - [Marla Jane](https://github.com/MarlaJane)
@@ -80,7 +80,7 @@ Stuff and things.
 
 ### Heroku Application Page
 
-- [Heroku Application](heroku link goes here)
+- [Puphub Heroku Application](https://desolate-mountain-07284.herokuapp.com/)
 
 ***
 
@@ -143,7 +143,7 @@ You can find more of our work on Github:
 
 This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit).
 
-Copyright (c) 2021 PupHub
+Copyright (c) 2021 Puphub
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

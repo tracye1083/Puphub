@@ -10731,6 +10731,13 @@ textarea.form-control-lg {
 }
 .navbar {
   background-color: #84b0aa;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+.navbar img {
+  margin-bottom: 1rem;
 }
 
 .navbar {
@@ -10738,7 +10745,16 @@ textarea.form-control-lg {
   flex-direction: row;
   top: 0px;
   width: 100%;
-  color: #ffe782;
+  padding-bottom: 0;
+}
+.navbar img {
+  align-content: flex-start;
+}
+.navbar h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 2px black;
 }
 .navbar .links {
   align-content: flex-end;
@@ -10748,41 +10764,89 @@ textarea.form-control-lg {
   padding: 1px;
 }
 
-.container {
-  background-color: #84b0aa;
-  color: #fff;
-  text-align: center;
-}
-.container .h1 {
-  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-}
-.container .card-body {
+.card {
   width: auto;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  margin: 2rem;
   color: black;
-  margin-bottom: 2rem;
-}
-.container .img {
-  border: 1;
-  border-color: #ffe782;
+  border: #ffb469;
   border-style: solid;
+  border-width: 0.5rem;
+  box-shadow: 10px 10px 20px black;
+  padding-bottom: 0;
 }
 
-.container-fluid {
-  background-color: #84b0aa;
-  position: relative;
-  margin-top: 20rem;
-  margin-bottom: 15rem;
-  color: #fff;
+h2 {
+  font-size: medium;
 }
-.container-fluid .img {
-  display: black;
-  width: 100%;
+
+h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 2px black;
+}
+
+.container {
+  align-items: center;
+}
+.container .card {
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  margin-bottom: 2rem;
+  margin-top: 0;
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  padding-bottom: 0;
+}
+.container img {
+  margin-bottom: 0;
+  margin-top: -2rem;
+  padding-bottom: 0;
+}
+.container h2 {
+  font-size: large;
+  font-weight: bold;
+}
+.container h3 {
+  font-size: medium;
+}
+
+.card {
+  padding-top: 5%;
+  margin-top: 12.5%;
+  width: 75%;
   height: auto;
-  margin-top: -18rem;
+}
+
+.overlay {
+  height: 50%;
+  width: 50%;
+}
+.overlay .img {
+  margin-left: 20%;
+  position: absolute;
+  z-index: 5;
 }
 
 body {
   background-image: url("../../images/tealPaws.png");
+}
+
+.container {
+  align-items: center;
+}
+.container .card {
+  width: 75%;
+  height: auto;
+  margin-top: 5%;
+  padding-left: 2%;
+}
+.container h4 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -5,7 +5,19 @@
     flex-direction: row;
     top: 0px;
     width: 100%;
-    color: $secondary;
+    padding-bottom: 0;
+
+    img {
+        align-content: flex-start;
+    }
+
+    h1 {
+        color: $white;
+        text-align: center;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-shadow: 2px 2px black;
+    }
+    
 
     .links {
         align-content: flex-end;

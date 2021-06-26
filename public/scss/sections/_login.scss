@@ -1,17 +1,17 @@
 @use '../custom' as *;
 
-.container-fluid {
-    background-color: $primary;
-    position: relative;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
-    padding-bottom: 5rem;
-    padding-top:5rem;
-    color: $white;
-        // .img-fluid {
-        //     position: absolute;
-        //     width: 100%;
-        //     height: auto;
-        //     margin-top: -23rem;
-        // }
+.card {
+    padding-top: 5%;
+    margin-top: 12.5%;
+    width: 75%;
+    height: auto;
+}
+.overlay {
+    height: 50%;
+    width: 50%;
+    .img {
+        margin-left: 20%;
+        position: absolute;
+        z-index: 5;
+    }
 }

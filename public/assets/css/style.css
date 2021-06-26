@@ -10731,6 +10731,13 @@ textarea.form-control-lg {
 }
 .navbar {
   background-color: #84b0aa;
+  bottom: 0px;
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+}
+.navbar img {
+  margin-bottom: 1rem;
 }
 
 .navbar {
@@ -10738,7 +10745,16 @@ textarea.form-control-lg {
   flex-direction: row;
   top: 0px;
   width: 100%;
-  color: #ffe782;
+  padding-bottom: 0;
+}
+.navbar img {
+  align-content: flex-start;
+}
+.navbar h1 {
+  color: #fff;
+  text-align: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  text-shadow: 2px 2px black;
 }
 .navbar .links {
   align-content: flex-end;
@@ -10757,6 +10773,8 @@ textarea.form-control-lg {
   border: #ffb469;
   border-style: solid;
   border-width: 0.5rem;
+  box-shadow: 10px 10px 20px black;
+  padding-bottom: 0;
 }
 
 h2 {
@@ -10774,24 +10792,20 @@ h1 {
   align-items: center;
 }
 .container .card {
-  position: relative;
-  display: flex;
+  box-shadow: 10px 10px 20px black;
   background-color: #ffb469;
   background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
-  margin: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 0;
   color: black;
   border: #ffb469;
   border-style: solid;
-  padding: 2rem;
+  padding-bottom: 0;
 }
-.container .img {
-  position: relative;
-  border: 1;
-  border-color: #ffe782;
-  border-style: solid;
-  background-color: #fff;
-  width: 50%;
-  height: auto;
+.container img {
+  margin-bottom: 0;
+  margin-top: -2rem;
+  padding-bottom: 0;
 }
 .container h2 {
   font-size: large;
@@ -10801,18 +10815,38 @@ h1 {
   font-size: medium;
 }
 
-.container-fluid {
-  background-color: #84b0aa;
-  position: relative;
-  margin-top: 5rem;
-  margin-bottom: 5rem;
-  padding-bottom: 5rem;
-  padding-top: 5rem;
-  color: #fff;
+.card {
+  padding-top: 5%;
+  margin-top: 12.5%;
+  width: 75%;
+  height: auto;
+}
+
+.overlay {
+  height: 50%;
+  width: 50%;
+}
+.overlay .img {
+  margin-left: 20%;
+  position: absolute;
+  z-index: 5;
 }
 
 body {
   background-image: url("../../images/tealPaws.png");
+}
+
+.container {
+  align-items: center;
+}
+.container .card {
+  width: 75%;
+  height: auto;
+  margin-top: 5%;
+  padding-left: 2%;
+}
+.container h4 {
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

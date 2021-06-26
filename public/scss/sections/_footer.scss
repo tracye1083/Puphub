@@ -2,5 +2,13 @@
 
 .navbar {
     background-color: $primary;
+    bottom: 0px;
+    width: 100%;
+    height: auto;
+    padding-bottom: 2rem;
+
+    img{
+        margin-bottom: 1rem;
+    }
     
 }

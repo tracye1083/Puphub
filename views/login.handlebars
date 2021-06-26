@@ -1,30 +1,30 @@
 
-
-<div class="container-fluid main_body ">
-    <div class="container">
-        <div class="text-center reg_msg">
-            <h2><span>LOGIN</span></h2>
-    </div>
-    <div class= "card">
-        <div class="row login">
-                <form method="POST" class="" id="loginForm" action="/api/users/login">
-
-                    <div class="form-group input_group">
-                        <input id="username" class="form-control" name="username" type="text" autocomplete="on" placeholder="USERNAME" style="margin-bottom:20px;">
+<div class="container-fluid">
+    <div class="column">
+        <div class="overlay">
+            <img class="img" src="images/upPups.png">
+        </div>
+    </div> 
+    <div class="column">        
+        <div class= "card text-center mx-auto">
+            <div class="text-center reg_msg">
+                <h4><span>LOGIN</span></h4>
+                <div class="row login">
+                        <form method="POST" class="" id="loginForm" action="/api/users/login">
+                            <div class="form-group input_group">
+                                <input id="username" class="form-control" name="username" type="text" autocomplete="on" placeholder="USERNAME" style="margin-bottom:20px;">
+                                <input id="password" class="form-control" name="password" type="password" placeholder="PASSWORD" style="margin-bottom:20px;">
+                                <input type="submit" id="submit" value="LOGIN" class="form-control btn btn-primary" name="submit" style="">
+                            </div>
+                        </form>
+                    <div>
+                        <h4>Don't have an account? <a href="/signup">SignUp</a></h4>
                     </div>
-                    <div class="form-group input_group">
-                        <input id="password" class="form-control" name="password" type="password" placeholder="PASSWORD" style="margin-bottom:20px;">
-                    </div>
-                    <div class="form-group">
-                        <input type="submit" id="submit" value="LOGIN" class="form-control btn btn-primary" name="submit" style="">
-                    </div>
-                </form>
-                <div>
-                    <h4>Don't have an account? <a href="/signup">SignUp</a></h4>
                 </div>
             </div>
         </div>
-    </div>
-</div> 
+    </div>  
+</div>
+ 
  
  

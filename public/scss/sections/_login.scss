@@ -1,15 +1,17 @@
 @use '../custom' as *;
 
-.container {
-    background-color: $primary;
-    position: relative;
-    margin-top: 20rem;
-    margin-bottom: 15rem;
-    color: $white;
-        .img {
-            display: absolute;
-            width: 100%;
-            height: auto;
-            margin-top: -18rem;
-        }
+.card {
+    padding-top: 5%;
+    margin-top: 12.5%;
+    width: 75%;
+    height: auto;
+}
+.overlay {
+    height: 50%;
+    width: 50%;
+    .img {
+        margin-left: 20%;
+        position: absolute;
+        z-index: 5;
+    }
 }

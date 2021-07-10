@@ -1,44 +1,47 @@
-    <div class="container-fluid main_body">
-        <div class="row">
-            {{#if loggedIN}}                
-            <h1>Hello, {{userFirstName}}</h1>
-            <p>Here is a listing of companies with reviews.  </p>
+<div class="container-fluid main_body">
+    <div class="row">
+        {{#if loggedIN}}                
+        <p>Here is a listing of companies with reviews.  </p>
+            <div class="col s12 m6">
                 {{#each companies as |company| }}
-                <div class="row mb-4 project complist">
-                    <div class="">
-                        <h2>
-                        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-                        {{{get_emoji}}}
-                        <a href="/api/companies/company/{{company.id}}">{{company.name}}</a>
-                        </h2>
+                    <div class="row mb-4 project complist">
+                        <div class="">
+                            <h2>
+                            <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+                            {{{get_emoji}}}
+                            <a href="/api/companies/company/{{company.id}}">{{company.name}}</a>
+                            </h2>
+                        </div>
+                        <div class="">
+                            <p>
+                            Category: {{company.category}} Rating: {{company.rating}} City: {{company.city}}
+                            </p>
+                        </div>
                     </div>
-                    <div class="">
-                        <p>
-                        Category: {{company.category}} Rating: {{company.rating}} City: {{company.city}}
-                        </p>
-                    </div>
-                </div>
                 {{/each}}
-            {{else}}          
-                <h1>Hello, welcome to Dog Day Reviews</h1>
-                <p>Here is a listing of companies with reviews.  To read a review, please <a href="/login">Login</a>.</p>                                 
+            </div>
+        {{else}}          
+            <h1>Hello, welcome to Dog Day Reviews</h1>
+            <p>Here is a listing of companies with reviews.  To read a review, please <a href="/login">Login</a>.</p>
+            <div class="col s12 m6">                                 
                 {{#each companies as |company| }}
-                <div class="row mb-4 project complist">
-                    <div class="col-md-5">
-                        <h2>
-                        <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-                        {{{get_emoji}}}
-                        {{company.name}}
-                        </h2>
+                    <div class="row mb-4 project complist">
+                        <div class="col-md-5">
+                            <h2>
+                            <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+                            {{{get_emoji}}}
+                            {{company.name}}
+                            </h2>
+                        </div>
+                        <div class="col-md-7">
+                            <p>
+                            Category: {{company.category}} Rating: {{company.rating}} City: {{company.city}}
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-md-7">
-                        <p>
-                        Category: {{company.category}} Rating: {{company.rating}} City: {{company.city}}
-                        </p>
-                    </div>
-                </div>
                 {{/each}}
-            {{/if}}
-        </div>
+            </div>
+        {{/if}}
     </div>
+</div>
 

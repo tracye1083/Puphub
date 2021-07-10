@@ -1,4 +1,8 @@
-# PupHub
+# Puphub
+
+![Logo](public/images/pupHubLogo.png)
+
+***
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -6,7 +10,7 @@ Group Project #2 for UNH Full-Stack Web Development Boot Camp.
 
 ***
 
-## PupHub Development Team Members
+## Puphub Development Team Members
 
 - [Tracy Angell](https://www.github.com/tracye1083)
 - [Marla Jane](https://github.com/MarlaJane)
@@ -16,7 +20,7 @@ Group Project #2 for UNH Full-Stack Web Development Boot Camp.
 
 ## Description
 
-Stuff and things.
+You’ve heard of services like Angie’s List, well we wanted to make Puphub the “Angie’s List” for dog related services! Every dog owner goes through the struggles of finding a good vet, or groomer etc and when owners meet up they always dish the deets verbally so why not give them a platform to let their voices be heard by all!We have provided a site that you can easily search and review local dog related companies.
 
 ***
 
@@ -25,10 +29,9 @@ Stuff and things.
 - [Technology Used](#technology-used)
 - [NPM Packages Used](#npm-packages-used)
 - [Links](#links)
-- [Video & Screen Captures](#video--screen-captures)
+- [Screen Capture](#screen-capture)
 - [User Story](#user-story)
 - [Usage](#usage)
-- [Installation](#installation)
 - [Credits](#credits)
 - [Questions](#questions)
 - [License](#license)
@@ -76,23 +79,19 @@ Stuff and things.
 
 ### Github Repository
 
-- [GitHub Repository](https://github.com/tracye1083/Project2)
+- [GitHub Repository](https://github.com/tracye1083/Puphub)
 
 ### Heroku Application Page
 
-- [Heroku Application](heroku link goes here)
+- [Puphub Heroku Application](https://desolate-mountain-07284.herokuapp.com/)
 
 ***
 
-## Video & Screen Captures
+## Screen Capture
 
-### Video Demo
+### Screenshot
 
-[Link to view Full Video of Application](link goes here)
-
-### Screenshots/GIF
-
-![Animated GIF of Application in Use](gif goes here)
+![Screenshot of Login Screen](public/images/Puphub.png)
 
 ***
 
@@ -109,12 +108,6 @@ SO THAT she can get the best for her new fur baby.
 ## Usage
 
 This application is used to search for companies relevant to being a dog owner. Need a groomer and want to know what others have said about them? Search our site and see!
-
-***
-
-## Installation
-
-flavor text goes here
 
 ***
 
@@ -143,7 +136,7 @@ You can find more of our work on Github:
 
 This project is licensed under the [MIT License](https://choosealicense.com/licenses/mit).
 
-Copyright (c) 2021 PupHub
+Copyright (c) 2021 Puphub
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 

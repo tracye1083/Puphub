@@ -1,14 +1,12 @@
-<div class="container-fluid main_body text-center"> 
+<div class="container text-center"> 
     <h4>Search for Companies By Zip Code</h4>
-    <div class="card text-center mx-auto">
+    <div class="card" id="searchCard">
         <form method="POST" action="/api/companies/searchZipCode"> <!--"/api/search/:zipCode">-->
-            <div class="form-group ">
+            <div class="form">
                 <label for="">Zip Code:</label>
                 <span id="errorMsg4"></span>
-                <input id="searchZipCode" class="form-control" name="searchZipCode" type="text" style="margin-bottom:20px;">
-            </div>
-            <div class="form-group">
-                <input type="submit" id="search" value="Search" class="form-control btn btn-primary" name="search" style="">
+                <input id="searchZipCode" class="form" name="searchZipCode" type="text" style="margin:20px;">
+                <input type="submit" id="search" value="Search" class="btn-primary" name="search" style="">
             </div>
         </form>
     </div>

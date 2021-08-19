@@ -91,7 +91,7 @@ You’ve heard of services like Angie’s List, well we wanted to make Puphub th
 
 ### Screenshot
 
-![Screenshot of Login Screen](public/images/Puphub.png)
+![Screenshot of Login Screen](public/images/homepagePupHub.png)
 
 ***
 

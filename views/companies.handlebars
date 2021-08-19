@@ -1,24 +1,26 @@
-<div class="container-fluid main_body">
+<div class="container" id="compsCont">
     <div class="row">
         {{#if loggedIN}}                
-        <p>Here is a listing of companies with reviews.  </p>
-            <div class="col s12 m6">
-                {{#each companies as |company| }}
-                    <div class="row mb-4 project complist">
-                        <div class="">
-                            <h2>
-                            <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-                            {{{get_emoji}}}
-                            <a href="/api/companies/company/{{company.id}}">{{company.name}}</a>
-                            </h2>
+        <h4 id="allRevs">Here is a listing of companies with reviews.  </h4>
+            <div class="card" id="compsCard">
+                <div class="col s12 m6">
+                    {{#each companies as |company| }}
+                        <div class="row mb-4 project complist">
+                            <div class="form">
+                                <h2>
+                                <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+                                {{{get_emoji}}}
+                                <a href="/api/companies/company/{{company.id}}">{{company.name}}</a>
+                                </h2>
+                            </div>
+                            <div class="">
+                                <p>
+                                Category: {{company.category}} Rating: {{company.rating}} City: {{company.city}}
+                                </p>
+                            </div>
                         </div>
-                        <div class="">
-                            <p>
-                            Category: {{company.category}} Rating: {{company.rating}} City: {{company.city}}
-                            </p>
-                        </div>
-                    </div>
-                {{/each}}
+                    {{/each}}
+                </div>
             </div>
         {{else}}          
             <h1>Hello, welcome to Dog Day Reviews</h1>

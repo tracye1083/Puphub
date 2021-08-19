@@ -1,15 +1,22 @@
 @use '../custom' as *;
 
-.card {
+#loginCard {
     padding-top: 5%;
-    margin-top: 12.5%;
-    width: 75%;
-    height: auto;
+    margin-top: 12%;
+    width: 60%;
+    height: 50%;
+    box-shadow: 10px 10px 20px black;
+    background-color: #ffb469;
+    background-image: radial-gradient( circle, #ffb469 5%, $secondary 95% );
+    color:black;
+    border: #ffb469;
+    border-style:solid;
+    margin-bottom: 2rem;
 }
 .overlay {
-    height: 50%;
-    width: 50%;
-    .img {
+    height: 30%;
+    width: 30%;
+    #loginPups {
         margin-left: 20%;
         position: absolute;
         z-index: 5;

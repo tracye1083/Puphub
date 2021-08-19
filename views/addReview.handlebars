@@ -1,26 +1,33 @@
-    <div class="container-fluid main_body">   
+    <div class="container">   
         <h4>Add A New Review for {{company.name}}</h4>
-        <div class="row login">          
+        <div class="row login mb-3">          
             <form method="POST" action="/api/reviews">
-                <div class="form-group ">
-                    <label for="">Review Rating(0-5):</label>
-                    <span id="errorMsg1"></span>
-                    <input id="rating" class="form-control" name="rating" type="text" style="margin-bottom:20px;">
-                </div>
-
-                <div class="form-group ">
-                    <label for="">Review Subject:</label>
-                    <span id="errorMsg2"></span>
-                    <input id="subject" class="form-control" name="subject" type="text" style="margin-bottom:20px;">
-                </div>
-
-                <div class="form-group ">
-                    <label for="">Review:</label>
-                    <span id="errorMsg2"></span>
-                    <input id="review" class="form-control" name="review" type="text" style="margin-bottom:20px;">
-                </div>
-                <div class="form-group">
-                    <input type="submit" id="register" value="Submit Review" class="form-control btn btn-primary" name="register" style="">
+                <div class="card" id="addRevCard">
+                    <div class="row">
+                        <div class="card-content col-md-6">
+                            <div class="form-group ">
+                                <label class="form-label">Review Rating(0-5):</label>
+                                <span id="errorMsg1"></span>
+                                <input id="rating" class="form-control" name="rating" type="text" style="margin-bottom:20px;">
+                            </div>
+                        </div>
+                        <div class="card-content col-md-6">
+                            <div class="form-group ">
+                                <label class="form-label">Review Subject:</label>
+                                <span id="errorMsg2"></span>
+                                <input id="subject" class="form-control" name="subject" type="text" style="margin-bottom:20px;">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group ">
+                        <label class="form-label">Review:</label>
+                        <span id="errorMsg2"></span>
+                        <input id="review" class="form-control" name="review" type="text" style="margin-bottom:20px;">
+                            {{!-- <textarea class="form-control" rows="4"></textarea> --}}
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" id="register" value="Submit Review" class="btn-primary" name="register" style="">
+                    </div>
                 </div>
             </form>
         </div>

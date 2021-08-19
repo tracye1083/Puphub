@@ -2,19 +2,19 @@
 <div class="container-fluid">
     <div class="column">
         <div class="overlay">
-            <img class="img" src="images/upPups.png">
+            {{!-- <img class="img" src="images/upPups.png" id="loginPups"> --}}
         </div>
     </div> 
     <div class="column">        
-        <div class= "card text-center mx-auto">
+        <div class= "card text-center mx-auto" id="loginCard">
             <div class="text-center reg_msg">
                 <h4><span>LOGIN</span></h4>
                 <div class="row login">
                         <form method="POST" class="" id="loginForm" action="/api/users/login">
                             <div class="form-group input_group">
-                                <input id="username" class="form-control" name="username" type="text" autocomplete="on" placeholder="USERNAME" style="margin-bottom:20px;">
-                                <input id="password" class="form-control" name="password" type="password" placeholder="PASSWORD" style="margin-bottom:20px;">
-                                <input type="submit" id="submit" value="LOGIN" class="form-control btn btn-primary" name="submit" style="">
+                                <input id="username" class="form" name="username" type="text" autocomplete="on" placeholder="USERNAME" style="margin-bottom:20px;">
+                                <input id="password" class="form" name="password" type="password" placeholder="PASSWORD" style="margin-bottom:20px;"><br>
+                                <input type="submit" id="submit" value="LOGIN" class="form btn btn-primary" name="submit" style="">
                             </div>
                         </form>
                     <div>

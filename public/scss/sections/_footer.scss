@@ -1,14 +1,16 @@
 @use '../custom' as *;
 
-.navbar {
+footer {
     background-color: $primary;
     bottom: 0px;
     width: 100%;
-    height: auto;
+    height: 5%;
     padding-bottom: 2rem;
+    position: fixed;
 
     img{
-        margin-bottom: 1rem;
+        margin-bottom: 1rem; 
+        align-self: center;
     }
     
 }

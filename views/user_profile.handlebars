@@ -1,64 +1,87 @@
-<div >    
-    <h1>Hello, {{user.firstName}}</h1>
-    <p>Here is a listing of profile data: {{company.name}} </p>
-    <div class="row login">
-        <form action="/action_page.php">
-            <div class="form-group ">
-                <label for="fname">First name:</label>
-                <input class="form-control" type="text" id="fname" name="fname" value="{{user.firstName}}" style="margin-bottom:10px;"><br>
-            </div>
-            <div class="form-group ">
-                <label for="lname">Last name:</label>
-                <input class="form-control" type="text" id="lname" name="lname" value="{{user.lastName}}" style="margin-bottom:10px;"><br>
-            </div>
-            <div class="form-group ">
-                <label for="address">Address:</label>
-                <input class="form-control" type="text" id="address" name="address" value="{{user.address}}" style="margin-bottom:10px;"><br>
-            </div>
-            <div class="form-group ">
-                <label for="city">City:</label>
-                <input class="form-control" type="text" id="city" name="city" value="{{user.city}}" style="margin-bottom:10px;"><br>
-            </div>
-            <div class="form-group ">
-                <label for="state">State:</label>
-                <input class="form-control" type="text" id="state" name="state" value="{{user.state}}" style="margin-bottom:10px;"><br>
-            </div>
-            <div class="form-group ">
-                <label for="zipCode">Zip Code:</label>
-                <input class="form-control" type="text" id="zipCode" name="zipCode" value="{{user.zipCode}}" style="margin-bottom:10px;"><br>
-            </div>
-            <div class="form-group ">
-                <label for="eMail">eMail:</label>
-                <input class="form-control" type="text" id="eMail" name="eMail" value="{{user.email}}" style="margin-bottom:10px;"><br>
-            </div>
-            <div class="form-group ">
-                <label for="pheNum">Phone Num:</label>
-                <input class="form-control" type="text" id="pheNum" name="pheNum" value="{{user.phone}}" style="margin-bottom:10px;"><br>
-            </div>
-            <div class="form-group ">
-                {{#if isAdmin}}
-                    <label for="isAdmin">Is Admin:</label>
-                    <input class="form-control" type="text" id="isAdmin" name="isAdmin" value="{{user.isAdmin}}" style="margin-bottom:10px;"><br>
-                {{/if}}                 
-            </div>
-            <div class="form-group ">
-                <input class="form-control btn btn-primary" type="submit" value="Submit">
-        </form>
+<div class="container" >    
+    <h4>Your Paw-some Profile Page! {{company.name}} </h4>
+    
         <div class="row">
-            <div class="row mb-4 project">
-                <div class="col-md-5">
-                    <h2>
-                    <!-- Call helper function with triple brackets to render the emoji span as HTML -->
-                    {{{get_emoji}}}
-                    {{company.name}}
-                    </h2>
+            <div class="card" id="profCard">
+            <form action="/action_page.php">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <div class="form ">
+                            <label for="fname" class="input-label">First name:</label>
+                            <input class="form-control" type="text" id="fname" name="fname" value="{{user.firstName}}" style="margin:1%;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form ">
+                            <label for="lname" class="form-label">Last name:</label>
+                            <input class="form-control" type="text" id="lname" name="lname" value="{{user.lastName}}" style="margin:1%;">
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="form ">
+                            <label for="address" class="form-label">Address:</label>
+                            <input class="form-control" type="text" id="address" name="address" value="{{user.address}}" style="margin:1%;">
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="form ">
+                            <label for="city" class="form-label">City:</label>
+                            <input class="form-control" type="text" id="city" name="city" value="{{user.city}}" style="margin:1%;">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form ">
+                            <label for="state" class="form-label">State:</label>
+                            <input class="form-control" type="text" id="state" name="state" value="{{user.state}}" style="margin:1%;">
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="form ">
+                            <label for="zipCode" class="form-label">Zip Code:</label>
+                            <input class="form-control" type="text" id="zipCode" name="zipCode" value="{{user.zipCode}}" style="margin:1%;">
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="form ">
+                            <label for="eMail" class="form-label">eMail:</label>
+                            <input class="form-control" type="text" id="eMail" name="eMail" value="{{user.email}}" style="margin:1%;">
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="form ">
+                            <label for="pheNum" class="form-label">Phone Num:</label>
+                            <input class="form-control" type="text" id="pheNum" name="pheNum" value="{{user.phone}}" style="margin:1%;">
+                        </div>
+                    </div>
+                        {{!-- <div class="form ">
+                            {{#if isAdmin}}
+                                <label for="isAdmin" class="form-label">Is Admin:</label>
+                                <input class="form" type="text" id="isAdmin" name="isAdmin" value="{{user.isAdmin}}" style="margin:1%;">
+                            {{/if}}                 
+                        </div> --}}
                 </div>
-
+                <div class="row">
+                    <div class="row mb-4 project">
+                        <div class="col-md-5">
+                            <h2>
+                            <!-- Call helper function with triple brackets to render the emoji span as HTML -->
+                            {{!-- {{{get_emoji}}} --}}
+                            {{company.name}}
+                            </h2>
+                        </div>
+                    </div>
+                    {{#each user.reviews as |review| }}
+                    {{> review-details}}
+                    {{/each}}
+                </div>
+            <div class="form mx-auto">
+                <input class="form btn btn-primary" type="submit" value="Submit">
             </div>
-            {{#each user.reviews as |review| }}
-            {{> review-details}}
-            {{/each}}
-       </div>
+                    
+            </div>
+                
+            </form>
+        </div>
     </div>
 </div>
  

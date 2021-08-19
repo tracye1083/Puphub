@@ -1,8 +1,8 @@
 @use '../custom' as *;
 
-.container {
+#landingCon {
     align-items: center;    
-        .card {
+        #landingCard {
             box-shadow: 10px 10px 20px black;
             background-color: #ffb469;
             background-image: radial-gradient( circle, #ffb469 5%, $secondary 95% );
@@ -12,9 +12,12 @@
             border: #ffb469;
             border-style:solid;
             padding-bottom: 0;
+            padding-top: 0;
+            width: 55%;
+            height: auto;
         }
 
-        img {
+        #landingImg {
             margin-bottom: 0;
             margin-top: -2rem;
             padding-bottom: 0;

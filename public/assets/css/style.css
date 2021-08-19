@@ -10729,15 +10729,62 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.navbar {
+#addCompCard {
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  margin-bottom: 5%;
+  margin-top: 2%;
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  padding: 1%;
+}
+
+#addRevCard {
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  margin-bottom: 1%;
+  margin-top: 2%;
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  padding: 1%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2%;
+}
+
+#compsCard {
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  margin-bottom: 5%;
+  margin-top: 5%;
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  width: 75%;
+  height: 65%;
+  overflow-y: auto;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 2%;
+}
+
+footer {
   background-color: #84b0aa;
   bottom: 0px;
   width: 100%;
-  height: auto;
+  height: 5%;
   padding-bottom: 2rem;
+  position: fixed;
 }
-.navbar img {
+footer img {
   margin-bottom: 1rem;
+  align-self: center;
 }
 
 .navbar {
@@ -10746,6 +10793,7 @@ textarea.form-control-lg {
   top: 0px;
   width: 100%;
   padding-bottom: 0;
+  margin-bottom: 2%;
 }
 .navbar img {
   align-content: flex-start;
@@ -10764,17 +10812,19 @@ textarea.form-control-lg {
   padding: 1px;
 }
 
-.card {
-  width: auto;
+#homeCard {
+  width: 50%;
+  height: auto;
   background-color: #ffb469;
   background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
-  margin: 2rem;
+  margin: 2%;
   color: black;
   border: #ffb469;
   border-style: solid;
   border-width: 0.5rem;
   box-shadow: 10px 10px 20px black;
   padding-bottom: 0;
+  margin-bottom: 2%;
 }
 
 h2 {
@@ -10788,10 +10838,10 @@ h1 {
   text-shadow: 2px 2px black;
 }
 
-.container {
+#landingCon {
   align-items: center;
 }
-.container .card {
+#landingCon #landingCard {
   box-shadow: 10px 10px 20px black;
   background-color: #ffb469;
   background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
@@ -10801,32 +10851,42 @@ h1 {
   border: #ffb469;
   border-style: solid;
   padding-bottom: 0;
+  padding-top: 0;
+  width: 55%;
+  height: auto;
 }
-.container img {
+#landingCon #landingImg {
   margin-bottom: 0;
   margin-top: -2rem;
   padding-bottom: 0;
 }
-.container h2 {
+#landingCon h2 {
   font-size: large;
   font-weight: bold;
 }
-.container h3 {
+#landingCon h3 {
   font-size: medium;
 }
 
-.card {
+#loginCard {
   padding-top: 5%;
-  margin-top: 12.5%;
-  width: 75%;
-  height: auto;
+  margin-top: 12%;
+  width: 60%;
+  height: 50%;
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  margin-bottom: 2rem;
 }
 
 .overlay {
-  height: 50%;
-  width: 50%;
+  height: 30%;
+  width: 30%;
 }
-.overlay .img {
+.overlay #loginPups {
   margin-left: 20%;
   position: absolute;
   z-index: 5;
@@ -10836,17 +10896,65 @@ body {
   background-image: url("../../images/tealPaws.png");
 }
 
+#singleRevCard {
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  margin-bottom: 5%;
+  margin-top: 2%;
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  padding: 1%;
+}
+
+#searchCard {
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  padding: 1%;
+  width: 40%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 .container {
   align-items: center;
 }
-.container .card {
-  width: 75%;
+.container #signUpCard {
+  max-width: 75%;
   height: auto;
   margin-top: 5%;
   padding-left: 2%;
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  margin-bottom: 2%;
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  padding-top: 1%;
 }
 .container h4 {
   text-align: center;
+}
+
+#profCard {
+  box-shadow: 10px 10px 20px black;
+  background-color: #ffb469;
+  background-image: radial-gradient(circle, #ffb469 5%, #ffe782 95%);
+  margin-bottom: 5%;
+  margin-top: 2%;
+  color: black;
+  border: #ffb469;
+  border-style: solid;
+  padding: 1%;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */

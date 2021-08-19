@@ -1,10 +1,20 @@
+@use '../custom' as *;
+
 .container {
     align-items: center;
-    .card{
-        width:75%;
+    #signUpCard{
+        max-width:75%;
         height: auto;
         margin-top: 5%;
         padding-left: 2%;
+        box-shadow: 10px 10px 20px black;
+        background-color: #ffb469;
+        background-image: radial-gradient( circle, #ffb469 5%, $secondary 95% );
+        margin-bottom: 2%;
+        color:black;
+        border: #ffb469;
+        border-style:solid;
+        padding-top: 1%;
     }
     h4 {
         text-align: center;

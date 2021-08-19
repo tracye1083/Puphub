@@ -1,24 +1,17 @@
-    
-        <div class="container mt-0">
-            <h2>Here is a listing of reviews for:</h2>
-
-            <div class="row">
-                <div class="row project">
-                    <div class="col-md-5">
-                        <h2>  {{{get_emoji}}} {{company.name}}    </h2>
-                        <h4>Category: {{company.category}}</h4>
-                        <h4>Rating: {{company.rating}}</h4>
-                     
-                    </div>
-            <form >
-              <div class="form-group">
-                <a href="/api/reviews/addReview/{{company.id}}" class="btn btn-block btn-primary link_btn">Add Review</a> 
-              </div>
-            </form>
-                </div>
-                    {{#each company.reviews as |review| }}
-                    {{> review-details}}
-                    {{/each}}
-            </div>
+<div class="container mt-0">
+  <div class="row">      
+    <h4>  {{{get_emoji}}} {{company.name}}</h4>
+    <h4>Category: {{company.category}}</h4>
+    <h4>Average Rating: {{company.rating}}</h4>
+    <div class="card" id="singleRevCard">
+      {{#each company.reviews as |review| }}
+      {{> review-details}}
+      {{/each}}
+      <form>
+        <div class="form-group">
+          <a href="/api/reviews/addReview/{{company.id}}" class="btn btn-block btn-primary link_btn">Add Review</a> 
         </div>
-    
+      </form>
+    </div>
+  </div>
+</div>

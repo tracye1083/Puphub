@@ -1,2 +1,21 @@
 @use '../custom' as *;
 
+#compsCard{
+    box-shadow: 10px 10px 20px black;
+    background-color: #ffb469;
+    background-image: radial-gradient( circle, #ffb469 5%, $secondary 95% );
+    margin-bottom: 5%;
+    margin-top: 5%;
+    color:black;
+    border: #ffb469;
+    border-style:solid;
+    width: 75%;
+    height: 65%;
+    overflow-y: auto;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2%;
+}
+
+

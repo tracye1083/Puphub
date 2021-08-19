@@ -1,2 +1,16 @@
 @use '../custom' as *;
 
+#addRevCard{
+    box-shadow: 10px 10px 20px black;
+    background-color: #ffb469;
+    background-image: radial-gradient( circle, #ffb469 5%, $secondary 95% );
+    margin-bottom: 1%;
+    margin-top: 2%;
+    color:black;
+    border: #ffb469;
+    border-style:solid;
+    padding: 1%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 2%;
+}

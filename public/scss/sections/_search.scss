@@ -1,0 +1,15 @@
+@use '../custom' as *;
+
+#searchCard{
+    box-shadow: 10px 10px 20px black;
+    background-color: #ffb469;
+    background-image: radial-gradient( circle, #ffb469 5%, $secondary 95% );
+    color:black;
+    border: #ffb469;
+    border-style:solid;
+    padding: 1%;
+    width: 40%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}
